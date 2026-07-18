@@ -87,22 +87,6 @@ function adicionar(){
 }
 
  function novamente () {
-        let listaSorteados = []  
-        let valueNumeros = Number(numeros.value)
-        let valorN1 = Number(de.value)
-        let valorN2 = Number(a.value)
-
-        for (let i = 0; i < valueNumeros; i++) {
-            let sorteado = Math.floor(Math.random() * (valorN2 - valorN1 + 1)) + valorN1
-            while (listaSorteados.includes(sorteado)) {
-             sorteado = Math.floor(Math.random() * (valorN2 - valorN1 + 1)) + valorN1
-        }
-    listaSorteados.push(sorteado)
-    }
-
-    let res = document.querySelector('#div4-secao2')
-    res.style.display = 'flex'
-
-    let result1 = document.querySelector('#result1')
-    result1.innerHTML = listaSorteados.join(' - ')       
+    // reaproveita toda a lógica do adicionar (trava de intervalo + respeita o checkbox)
+    adicionar()
     }
