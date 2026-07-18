@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sorteador de números</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:ital,wght@0,100..900;1,100..900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Geist+Pixel&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <img src="assets/logo.svg" alt="">
+        <h1>NUMBERS</h1>
+    </header>
+
+
+<div class="container">
+    <section id="secao1">
+        <div id="div1-secao1">
+            <p>online - gratuito</p>
+            <h2 id="sorteador">SORTEADOR<br>DE NÚMEROS</h2>
+        </div>
+
+        <div id="div2-secao1">
+            <div class="div-separatoria">
+              <img src="assets/Frame.svg" alt="" class="img">
+              <h3>Como funciona o sorteador de números?</h3>
+            </div>
+            <p>O sorteador utiliza um algoritmo de geração aleatória para criar <br>números dentro do intervalo especifico do usuário.</p>
+        </div>
+
+        <div id="div3-secao1">
+            <div class="div-separatoria">
+              <img src="assets/Frame.svg" alt="" class="img">
+              <h3>Posso escolher o intervalo dos números?</h3>
+            </div>
+            <p>Sim, você pode definir os valores mínimo e máximo para o <br>intervalo dos números sorteados</p>
+        </div>
+    </section>
+
+    <section id="secao2">
+        <div id="div1-secao2">
+          <h2>QUERO SORTEAR:</h2>
+          <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os <br> resultados na tela. É rápido e fácil!</p>
+        </div>
+    <div id="esconder">
+        <div id="div2-secao2">
+            <div>
+                <h2 class="numero">NÚMEROS</h2>
+                <input type="number" class="input numero" id="numeros">
+            </div>
+
+            <div>
+                <h2 class="numero">DE</h2>
+                <input type="number" class="input" id="de">
+            </div>
+            <div>
+                <h2 class="numero">A</h2>
+                <input type="number" class="input" id="a">
+            </div>
+        </div>
+
+        <div id="div3-secao2">
+            <input type="checkbox" id="checkbox" > 
+            <span> Não repetir número</span>
+            
+        </div>
+
+        <div class="botao">
+            <input type="button" class="btn" value="SORTEAR →">
+        </div>
+    </div>
+
+        <div id="div4-secao2">
+            <h3>RESULTADO DO SORTEIO</h3>
+            <p id="identação"> <span id="adicionar">1°</span> RESULTADO</p>
+
+            <div class="div5-secao2">
+                <div id="result1"></div>
+                <div id="result2"></div>
+            </div>
+
+            <div id="divbtn">
+                <input type="button" value="SORTEAR NOVAMENTE " id="sortear-novamente"> 
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12a9 9 0 1 1-2.64-6.36"/>
+                <polyline points="21 3 21 9 15 9"/>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+
+
+    <footer>
+
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

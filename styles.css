@@ -1,0 +1,179 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Geist Pixel', monospace;
+}
+
+.container {
+    display: flex;
+    padding: 2rem;
+}
+
+#secao1, #secao2 {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    padding: 3rem 1rem 1rem 3rem;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    background-color: #1b0101;
+}
+
+#sorteador {
+    font-size: 6rem;
+}
+
+#div1-secao1, #div2-secao1, #div3-secao1 {
+    color: white;
+    padding: 1rem;
+}
+
+.div-separatoria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: #c58de7;
+}
+
+.img {
+    height: 30px;
+    width: 30px;
+}
+
+#div1-secao2 {
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#div2-secao2 {
+    padding: 1rem;
+    display: flex;
+    gap: 15px
+}
+
+.numero {
+    color: #ffffff;
+}
+
+.input {
+    background-color: #ffffff;
+    padding: 2rem 0.5rem 2rem 0.5rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    width: 85%;
+    color: #c58de7
+}
+
+#checkbox {
+    appearance: none;              /* remove o visual padrão */
+    -webkit-appearance: none;
+    width: 44px;
+    height: 24px;
+    border-radius: 999px;
+    background: #3a2a45;            /* cor quando DESLIGADO */
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* a bolinha */
+#checkbox::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    transition: left 0.3s;
+}
+
+/* estado LIGADO (marcado) */
+#checkbox:checked {
+    background: linear-gradient(90deg, #a06bd4, #e0a3f0);  /* gradiente roxo/rosa */
+}
+
+/* move a bolinha pra direita quando ligado */
+#checkbox:checked::before {
+    left: 22px;
+}
+
+#div3-secao2 {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#div3-secao2 span {
+    color: white;
+}
+
+
+ .btn {
+    background-color: white;
+    padding: 1rem;
+    width: 70%;
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    transition-duration: 0.99ms;
+}
+
+.caixa-numero {
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+
+#div4-secao2 {
+    display: none;
+    padding: 1rem;
+    flex-direction: column;
+    color: white;
+    gap: 7px;
+}
+
+#divbtn {
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 70%;
+    justify-content: center;
+}
+
+#divbtn:hover {
+    transform: scale(1.05);
+}
+
+#sortear-novamente {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+#esconder {
+    display: grid;
+}
